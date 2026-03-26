@@ -130,9 +130,22 @@ Ensures system reliability.
 
 ## 🖼 Screenshots
 
+### 🧠 Lead Routing Workflow
+
 ![Lead Routing Logic](screenshots/lead-routing.png)
+
+<br>
+
+### 📊 CRM Data (Google Sheets)
+
 ![CRM Sheet](screenshots/crm-sheet.png)
+
+<br>
+
+### 🔔 Slack Notification System
+
 ![Slack Alert](screenshots/slack-notification.png)
+
 
 ## 💼 14. BUSINESS VALUE
 - Saves time
