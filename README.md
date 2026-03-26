@@ -13,23 +13,11 @@ The system captures user inquiries through a web form, analyzes them using AI, c
 6. Implement real-time alerts
 
 ## 🏗️ SYSTEM ARCHITECTURE
-Web Form → Webhook → Variables → AI (Groq)
-        ↓
-     JSON Parser
-        ↓
- Duplicate Check
-        ↓
-      Router
-   /     |      \
-HOT   WARM    COLD
- ↓      ↓       ↓
-CRM   CRM     CRM
- ↓      ↓
-Alerts  Email
- ↓
-Follow-up
- ↓
-Update CRM
+Web Form → Webhook → Variables → AI (Groq) → JSON Parser → Duplicate Check → Router
+
+- **HOT** → CRM → Alerts → Follow-up → Update CRM
+- **WARM** → CRM  → Email → Follow-up → Update CRM
+- **COLD** → CRM
 
 ## 📥 INPUT (WEB FORM)
 Fields:
@@ -165,8 +153,8 @@ To use:
 2. Follow the Setup Instructions
   
 ## ⚙ Setup Instructions
-Import blueprint into Make.com
-Connect Webhook
-Add Groq API key
-Connect Google Sheets
-Configure Slack notifications
+1. Import blueprint into Make.com
+2. Connect Webhook
+3. Add Groq API key
+4. Connect Google Sheets
+5. Configure Slack notifications
